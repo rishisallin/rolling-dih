@@ -66,17 +66,17 @@ function App() {
         notes: `1 half-barrel ≈ 165 12-oz servings`
       },
       {
-        item: 'Spirits (standard drinks/shots)',
+        item: 'Booze (standard drinks/shots)',
         quantity: `${round(shots)} drinks → ~${fifths} fifths or ${handles} handles`,
-        notes: `${spiritPeople} spirit drinkers, ${p.drinksPer} drinks/person`
+        notes: `${spiritPeople} booze drinkers, ${p.drinksPer} drinks/person`
       },
       {
-        item: 'Weed',
+        item: 'Za',
         quantity: `${totalWeed_g} g ≈ ${ounces} oz`,
         notes: `${weedUsers} users, ${p.weedPer} g/user`
       },
       {
-        item: 'Cocaine',
+        item: 'Bag',
         quantity: `${totalCoke_g} g ≈ ${cokeEights} x 1/8 oz (8-ball)`,
         notes: `${cokeUsers} users, ${p.cokePer} g/user`
       }
@@ -101,7 +101,7 @@ function App() {
     <div className="card">
       <h1>Party Supply Calculator</h1>
       <div className="small">
-        Plug in headcount and vibe — gets you beer, liquor, weed and coke estimates (social-use guidance only).
+        Plug in headcount and vibe — gets you beer, booze, za and bag estimates (social-use guidance only).
       </div>
 
       <label>Headcount</label>
@@ -134,7 +134,7 @@ function App() {
         onChange={(e) => setBeerShare(clampPercent(e.target.value))}
       />
 
-      <label>Percent who drink spirits (percent of guests who will primarily drink liquor)</label>
+      <label>Percent who drink booze (percent of guests who will primarily drink liquor)</label>
       <input
         id="liquorShare"
         type="number"
@@ -144,7 +144,7 @@ function App() {
         onChange={(e) => setLiquorShare(clampPercent(e.target.value))}
       />
 
-      <label>Percent likely to use cannabis</label>
+      <label>Percent likely to use za</label>
       <input
         id="weedShare"
         type="number"
@@ -154,7 +154,7 @@ function App() {
         onChange={(e) => setWeedShare(clampPercent(e.target.value))}
       />
 
-      <label>Percent likely to use cocaine</label>
+      <label>Percent likely to use bag</label>
       <input
         id="cokeShare"
         type="number"
@@ -167,7 +167,7 @@ function App() {
       {results && (
         <>
           <div className="result">
-            <strong>Summary:</strong> For {results.head} people ({results.vibe.replace(/([A-Z])/g, ' $1')}) — ~{results.totalBeers} beers, ~{results.shots} spirit-drinks, {results.totalWeed_g} g weed, {results.totalCoke_g} g coke.
+            <strong>Summary:</strong> For {results.head} people ({results.vibe.replace(/([A-Z])/g, ' $1')}) — ~{results.totalBeers} beers, ~{results.shots} booze-drinks, {results.totalWeed_g} g za, {results.totalCoke_g} g bag.
           </div>
 
           <table className="table">
