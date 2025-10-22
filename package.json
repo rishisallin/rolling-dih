@@ -1,7 +1,7 @@
 {
-  "name": "party-supply-calculator",
+  "name": "cloud-9",
   "version": "1.0.0",
-  "description": "A React app for calculating party supplies",
+  "description": "Cloud 9 - A React app for calculating party supplies",
   "main": "index.js",
   "scripts": {
     "dev": "vite",

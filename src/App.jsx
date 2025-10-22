@@ -99,7 +99,7 @@ function App() {
 
   return (
     <div className="card">
-      <h1>Party Supply Calculator</h1>
+      <h1>Cloud 9</h1>
       <div className="small">
         Plug in headcount and vibe — gets you beer, booze, za and bag estimates (social-use guidance only).
       </div>

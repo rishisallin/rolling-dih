@@ -1,4 +1,4 @@
-# Party Supply Calculator
+# Cloud 9
 
 A React application for calculating party supplies including alcohol, cannabis, and other substances based on headcount and party vibe.
 
